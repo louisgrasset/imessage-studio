@@ -49,7 +49,8 @@
         }
         
         &--pinned {
-            width: 6.5rem;
+            box-sizing: border-box;
+            width: 33%;
             display: inline-block;
             padding: 1rem;
             #{$item} {
