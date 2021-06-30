@@ -39,10 +39,10 @@ export function ChannelList({ currentChannel }: ChannelListProps) {
                                         {
                                             channel.receipents.map((receipent, receipentKey) => (
                                                 <Fragment key={receipentKey}>
-                                                    {users.find(user => user.id === receipent)?.firstname}
-                                                    <span>{' ' + users.find(user => user.id === receipent)?.lastname + ','}</span>
+                                                    <span className="channel-list-item-receipents-item">{users.find(user => user.id === receipent)?.firstname} <div className="channel-list-item-receipents-item--lastname">{users.find(user => user.id === receipent)?.lastname}</div></span>
                                                 </Fragment>
-                                            ))
+                                            )
+                                            )
                                         }
                                     </div>
                                     <div className="channel-list-item-excerpt">

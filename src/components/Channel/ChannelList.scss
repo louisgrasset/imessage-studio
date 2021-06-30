@@ -63,7 +63,7 @@
                     font-weight: 400;
                     text-align: center;
                     font-size: 1.1em;
-                    span {
+                    &-item--lastname {
                         display: none;
                     }
                 }
@@ -167,6 +167,15 @@
             overflow: hidden;
             white-space: nowrap;
             width: 100%;
+            &-item{
+                &:not(:last-child)::after{
+                    content: ', ';
+                } 
+                
+                &--lastname {
+                    display: inline;
+                }
+            } 
         }
         &-excerpt {
             font-size: 1.2rem;
