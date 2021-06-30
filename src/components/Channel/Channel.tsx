@@ -14,7 +14,7 @@ export function Channel({ id }: ChannelProps) {
     return (
         <div className="channel">
             <ChannelHeader receipents={receipents} />
-            <ChannelThreads threads={channel?.messages} />
+            <ChannelThreads threads={channel ? channel.messages : []} />
             <ChannelInput />
         </div>
     )
