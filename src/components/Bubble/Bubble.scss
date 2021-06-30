@@ -29,8 +29,11 @@
             z-index: 1;
             bottom: -.15rem;
             mask-image: url('../../images/tail.svg');
+            -webkit-mask-image: url('../../images/tail.svg');
             mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
             mask-position: center;
+            -webkit-mask-position: center;
         }
         &#{$bubble} {
             &--right:last-child::after {
