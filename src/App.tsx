@@ -19,7 +19,7 @@ function App() {
         return <Redirect push to="/studio" />
       }
     }
-    return <Redirect push to="/welcome" />
+    return <Redirect push to="/studio" />
   }, []);
 
   return (
