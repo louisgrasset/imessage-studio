@@ -1,0 +1,30 @@
+.window-buttons {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+    .button {
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        border: 1.5px solid transparent;
+
+        &--close {
+            background-color: var(--window-button-close);
+            border-color: var(--window-button-border-close);
+        }
+        &--minimize {
+            background-color: var(--window-button-minimize);
+            border-color: var(--window-button-border-minimize);
+        }
+        &--maximize {
+            background-color: var(--window-button-maximize);
+            border-color: var(--window-button-border-maximize);
+        }
+    }
+}

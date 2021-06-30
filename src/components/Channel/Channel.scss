@@ -1,0 +1,12 @@
+.channel {
+    position: relative;
+    border-radius: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

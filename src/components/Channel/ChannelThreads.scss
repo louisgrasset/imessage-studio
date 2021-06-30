@@ -1,0 +1,12 @@
+.channel-threads {
+    border-radius: inherit;
+    z-index: 1;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    max-height: 100%;
+    width: 100%;
+}

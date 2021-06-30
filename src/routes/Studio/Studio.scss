@@ -1,0 +1,19 @@
+.window-aside {
+    background-color: var(--app-background);
+    border-right: 1px solid var(--window-border);
+    max-height: inherit;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    > .wrapper {
+        position: relative;
+        top: 6rem;
+        padding: 0 2rem;
+        height: calc(100% - 6rem);
+        overflow: auto;
+    }
+}
+.channel-wrapper {
+    background-color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}

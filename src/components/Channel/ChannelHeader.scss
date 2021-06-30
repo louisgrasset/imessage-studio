@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+
+.channel-header {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    z-index: 2;
+    padding: 2rem;
+    @include blur();
+    font-size: 1.3rem;
+    background-color: #f0f0f0e5;
+    border-bottom: 1px solid var(--window-border);
+    .receipents-list {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &--from {
+            color: var(--secondary);
+        }
+        &--item {
+            &:not(:last-child)::after {
+                content: ', ';
+            }
+        }
+    }
+}

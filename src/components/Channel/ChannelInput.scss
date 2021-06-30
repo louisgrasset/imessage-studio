@@ -1,0 +1,45 @@
+@import '../../styles/mixins';
+
+.channel-input {
+    z-index: 2;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    display: grid;
+    grid-template-columns: 1fr 2rem;
+    column-gap: 1.3rem;
+    padding: 1rem 1.5rem 1.3rem;
+    align-items: center;
+    @include blur();
+    input {
+        border-radius: 1.3rem;
+        border: 1px solid var(--window-border);
+        padding: .4rem 1rem;
+        &::placeholder {
+            color: black;
+            opacity: .2;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:not(:placeholder-shown) {
+            + .button {
+                background-color: var(--button-primary);
+            } 
+        } 
+    }
+    .button {
+        transition: background-color .1s ease;
+        border-radius: 50%;
+        height: 2.4rem;
+        width: 2.4rem;
+        border: 0;
+        -webkit-appearance: none;
+        background-color: var(--button-secondary);
+        background-image: url('../../images/send.svg');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}
+

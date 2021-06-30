@@ -1,0 +1,52 @@
+@import './styles/mixins';
+@import './styles/colors';
+
+html {
+    font-size: 10px;
+    background-color: #ce4fa5;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+* {
+    scrollbar-color: var(--scrollbar) transparent;
+    scrollbar-color: var(--scrollbar) transparent;
+    scrollbar-width: thin;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2rem);
+    padding: 20rem 2rem;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    perspective: 100rem;
+    .container {
+        position: relative;
+        max-width: 90rem;
+        max-height: 60rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 30rem 1fr;
+        box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+        border: 1px solid var(--window-border);
+        border-radius: 1rem;
+        opacity: 0;
+        transform: scale(.8) translateY(3rem) rotateX(10deg);
+        animation: zoom .4s .5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        transform-origin: bottom center;
+    }
+    @keyframes zoom {
+        from {
+            transform: scale(.8) translateY(3rem) rotateX(10deg);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1) translateY(0) rotateX(0);
+            opacity: 1;
+        }
+
+    }
+}

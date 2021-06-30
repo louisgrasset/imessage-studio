@@ -1,0 +1,45 @@
+.bubble {
+    $bubble : &;
+    max-width: 70%;
+    padding: .6rem 1rem;
+    margin-bottom: .4rem;
+    border-radius: 1.5rem;
+    font-size: 1.35rem;
+    position: relative;
+    z-index: 2;
+    &--right {
+        background-color: var(--bubble-primary);
+        color: var(--bubble-primary-text);
+        align-self: flex-end;
+    }
+    &--left {
+        background-color: var(--bubble-secondary);
+        color: var(--bubble-secondary-text);
+        align-self: flex-start;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+        &::after {
+            position: absolute;
+            content: '';
+            background-color: inherit;
+            height: 1rem;
+            width: 1rem;
+            z-index: 1;
+            bottom: -.15rem;
+            mask-image: url('../../images/tail.svg');
+            mask-repeat: no-repeat;
+            mask-position: center;
+        }
+        &#{$bubble} {
+            &--right:last-child::after {
+                right: -.15rem;
+            }
+            &--left:last-child::after {
+                left: -.15rem;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
