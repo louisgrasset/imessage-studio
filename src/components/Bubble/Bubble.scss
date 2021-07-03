@@ -17,6 +17,9 @@
         color: var(--bubble-secondary-text);
         align-self: flex-start;
     }
+    &--emojis {
+        font-size: 3rem;
+    }
 
     &:last-child {
         margin-bottom: 0;

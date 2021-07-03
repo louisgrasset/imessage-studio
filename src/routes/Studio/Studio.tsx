@@ -15,6 +15,8 @@ export function Studio() {
 
     return (
         <>
+            <h1>Studio</h1>
+            <Link to="/welcome">See welcome screen</Link>
             <div className="container">
                 <div className="window-aside">
                     <WindowButtons />

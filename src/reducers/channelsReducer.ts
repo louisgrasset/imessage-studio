@@ -24,8 +24,44 @@ const initialState = {
         },
         {
             id: "edd91cc9-d154-41a2-bfb4-377b9fa0d3a9",
-            messages: [],
-            receipents: [0],
+            messages: [
+                {
+                    senderId: 0,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "Hey wanna grab a lunch this weekend?"
+                },
+                {
+                    senderId: 2,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "I'm free Saturday after noon, what time were you thinking?"
+                },
+                {
+                    senderId: 0,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "How about 1pm?"
+                },
+                {
+                    senderId: 2,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "This sounds good. Want to check out the new café down the street from the park?"
+                },
+                {
+                    senderId: 0,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "Perfect, I've been wanting to go! I hear the pizza is delicious!"
+                },
+                {
+                    senderId: 2,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "Excellent! See you Saturday at 1m in from of the café. 😃"
+                },
+                {
+                    senderId: 0,
+                    date: new Date("2021-06-28T18:44:18.435Z").toString(),
+                    content: "👍"
+                },
+            ],
+            receipents: [2],
             pinned: false
         },
         {

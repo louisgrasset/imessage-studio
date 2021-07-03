@@ -6,6 +6,8 @@ export function Welcome() {
 
     return (
         <>
+            <h1>Welcome</h1>
+            <Link to="/studio">Launch studio</Link>
         </>
     )
 }
